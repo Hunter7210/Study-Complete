@@ -115,7 +115,7 @@ public class App {
             if (acao == 2 && acao1 == 1) {
                 int pesqu = 0;
                 int nContaDig;
-                int nomeDig;
+                /* int nomeDig; */
 
                 pesqu = Integer.parseInt(JOptionPane.showInputDialog(null,
                         "Escolha uma ação" + "\n" + "1- Acessar por n° Conta" + "\n" + "2- Acessar por Nome"));
