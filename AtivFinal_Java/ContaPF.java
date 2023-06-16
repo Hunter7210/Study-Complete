@@ -108,17 +108,5 @@ public class ContaPF extends Conta {
         this.telP = telP;
     }
 
-    // metodos adicionais
-    // saldo
-    public void saldo() {
-        JOptionPane.showMessageDialog(null, getSaldo());
-    }
-
-    // Saque
-    public void saque() {
-        if (getSaldo().equals(0)) {
-            JOptionPane.showMessageDialog(null, "NÃO HÁ SALDO SUFICIENTE");
-        }
-    }
 
 }

@@ -17,21 +17,13 @@ public class App {
         boolean ligado = true;
         int acao;
         int acao1;
+        int acao3;
 
         while (ligado) {
 
-            int num1 = 00000;
-            int fim1 = 99999;
-
-            int num2 = 99999;
-            int fim2 = 999999;
-
-            int numContaP = rd.nextInt(fim1);
-            int numContaE = rd.nextInt(fim2);
-            /*
-             * int numContaP = rd.nextInt(num1, fim1); /* (num1, fim1);
-             * int numContaE = rd.nextInt(num2, fim2);
-             */
+            int numContaP = 1000+cont+1;
+            int numContaE = 1000+cont+1;
+   
             int corSen;
             int senha = 0;
 
@@ -78,6 +70,9 @@ public class App {
                     JOptionPane.showMessageDialog(null, "PREENCHA NOVAMENTE");
                 }
 
+                JOptionPane.showMessageDialog(null, numContaE+"ESCOLHA UMA FUNÇÃO:"+"\n"+"1- SALDO \n 2- SAQUE"+"\n"+"3- DESPÓSITO "+"\n"+ "4- EMPRÉSTIMO"+"\n"+"5- SAIR");
+            acao2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe a Ação"));
+
             }
 
             if (acao == 1 && acao1 == 2) {
@@ -115,7 +110,7 @@ public class App {
             if (acao == 2 && acao1 == 1) {
                 int pesqu = 0;
                 int nContaDig;
-                /* int nomeDig; */
+                int nomeDig;
 
                 pesqu = Integer.parseInt(JOptionPane.showInputDialog(null,
                         "Escolha uma ação" + "\n" + "1- Acessar por n° Conta" + "\n" + "2- Acessar por Nome"));
