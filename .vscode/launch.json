@@ -1,0 +1,147 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "AtivFinal_Java.App",
+            "projectName": "Hunter7210---Java-main_6425c793"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "AtivFinal_Java.App",
+            "projectName": "Hunter7210---Java-main_f09083d5"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "AtivFinal_Java.App",
+            "projectName": "Hunter7210---Java-main_2a5b25b4"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ExercicioPOO3.App",
+            "projectName": "Hunter7210---Java-main_2a5b25b4"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ExercicioPOO2.App",
+            "projectName": "Hunter7210---Java-main_2a5b25b4"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ExercicioPOO2.App",
+            "projectName": "Hunter7210---Java-main_f09083d5"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ExercicioPOO3.App",
+            "projectName": "Hunter7210---Java-main_6425c793"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ExercicioPOO2.App",
+            "projectName": "Hunter7210---Java_4108b193"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ExerciciosPOO.App",
+            "projectName": "Hunter7210---Java_4108b193"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Hunter7210---Java_4108b193"
+        },
+        {
+            "type": "java",
+            "name": "App(1)",
+            "request": "launch",
+            "mainClass": "AtivFormativaLógica.App",
+            "projectName": "Hunter7210---Java_4108b193"
+        },
+        {
+            "type": "java",
+            "name": "CalcGastoViagem",
+            "request": "launch",
+            "mainClass": "CalcGastoViagem.CalcGastoViagem",
+            "projectName": "Hunter7210---Java_4108b193"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "CalculadoraDeDesconto.Main",
+            "projectName": "Hunter7210---Java_4108b193"
+        },
+        {
+            "type": "java",
+            "name": "App(2)",
+            "request": "launch",
+            "mainClass": "EstruturaDecisãoIfElse.App",
+            "projectName": "Hunter7210---Java_4108b193"
+        },
+        {
+            "type": "java",
+            "name": "App(3)",
+            "request": "launch",
+            "mainClass": "ExerciciosIFELSE.App",
+            "projectName": "Hunter7210---Java_4108b193"
+        },
+        {
+            "type": "java",
+            "name": "App(4)",
+            "request": "launch",
+            "mainClass": "IteracaoFor.App",
+            "projectName": "Hunter7210---Java_4108b193"
+        },
+        {
+            "type": "java",
+            "name": "app",
+            "request": "launch",
+            "mainClass": "Matrizes.app",
+            "projectName": "Hunter7210---Java_4108b193"
+        },
+        {
+            "type": "java",
+            "name": "App(5)",
+            "request": "launch",
+            "mainClass": "Operadores.App",
+            "projectName": "Hunter7210---Java_4108b193"
+        },
+        {
+            "type": "java",
+            "name": "CalcVelocMed",
+            "request": "launch",
+            "mainClass": "VelocidadeMedia.CalcVelocMed",
+            "projectName": "Hunter7210---Java_4108b193"
+        }
+    ]
+}
