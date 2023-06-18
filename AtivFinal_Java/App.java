@@ -113,6 +113,7 @@ public class App {
 
                 pesqu = Integer.parseInt(JOptionPane.showInputDialog(null,
                         "Escolha uma ação" + "\n" + "1- Acessar por n° Conta" + "\n" + "2- Acessar por Nome"));
+
                 if (pesqu == 1) {
                     nContaDig = Integer.parseInt(JOptionPane.showInputDialog(null,
                             "Digite n° da conta: "));
@@ -159,6 +160,62 @@ public class App {
                     default:
                         JOptionPane.showMessageDialog(null, "INFORME UMA AÇÃO EXISTENTE");
                 }
+            } else {
+                int pesqu = 0;
+                int nContaDig;
+                String nomeDig;
+
+                pesqu = Integer.parseInt(JOptionPane.showInputDialog(null,
+                        "Escolha uma ação" + "\n" + "1- Acessar por n° Conta" + "\n" + "2- Acessar por Nome"));
+
+                if (pesqu == 1) {
+                    nContaDig = Integer.parseInt(JOptionPane.showInputDialog(null,
+                            "Digite n° da conta: "));
+                    if (contaPJ[cont].getNumeroConta().equals(nContaDig)) {
+                        JOptionPane.showMessageDialog(null, "Acesso permitido");
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Acesso negado");
+                    }
+                } else {
+                    nomeDig = JOptionPane.showInputDialog(null,
+                            "Digite seu nome: ");
+                    if (contaPJ[cont].getNomeEmp().equals(nomeDig)) {
+                        JOptionPane.showMessageDialog(null, "Acesso permitido");
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Acesso negado");
+                    }
+                }
+
+                acao2 = Integer.parseInt(JOptionPane.showInputDialog(null,
+                        "N° DA CONTA: " + contaPJ[cont].getNumeroConta() + "\n" + "USUÁRIO: "
+                                + contaPJ[cont].getNomeEmp()
+                                + "\n" + "ESCOLHA UMA FUNÇÃO:" + "\n" + "1- SALDO \n 2- SAQUE"
+                                + "\n" + "3- DESPÓSITO " + "\n" + "4- EMPRÉSTIMO" + "\n" + "5- SAIR"));
+
+                switch (acao2) {
+                    case 1:
+                        contaPJ[cont].getSaldo();
+                        break;
+
+                    case 2:
+                        contaPJ[cont]
+                                .saque(Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o valor a sacar: ")));
+                        break;
+
+                    case 3:
+                        contaPJ[cont].deposito();
+                        break;
+
+                    case 4:
+                        contaPJ[cont].emprestimo();
+                        break;
+                    case 5:
+                        ligado = false;
+
+                    default:
+                        JOptionPane.showMessageDialog(null, "INFORME UMA AÇÃO EXISTENTE");
+                }
+
             }
         }
     }
