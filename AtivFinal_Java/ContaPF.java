@@ -1,7 +1,5 @@
 package AtivFinal_Java;
 
-import javax.swing.JOptionPane;
-
 public class ContaPF extends Conta {
     // Construit ContaPessa Física
     // Atributos da ContaPF
@@ -107,6 +105,5 @@ public class ContaPF extends Conta {
     public void setTelP(String telP) {
         this.telP = telP;
     }
-
 
 }

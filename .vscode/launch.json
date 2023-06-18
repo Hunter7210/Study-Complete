@@ -9,6 +9,13 @@
             "name": "App",
             "request": "launch",
             "mainClass": "AtivFinal_Java.App",
+            "projectName": "Hunter7210---Java-main_2b4379b3"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "AtivFinal_Java.App",
             "projectName": "Hunter7210---Java-main_6425c793"
         },
         {

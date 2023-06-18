@@ -93,7 +93,7 @@ public abstract class Conta {
     // sair da conta
     public void sair() {
         JOptionPane.showMessageDialog(null, "VOLTE SEMPRE!");
-        ligado =false //tem q colocar no outro lá
+        /* ligado =false */ // tem q colocar no outro lá
     }
 
 }
