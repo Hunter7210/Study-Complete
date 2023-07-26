@@ -1,13 +1,16 @@
 package RevisaoFPOO.Cadastro;
 
-public class Animais {
+public abstract class Animais {
     //Toda classe tem atributos(caracteristicas/variaveis) e metodos()
     //atributos:
     String porte;  //ela não uma variavel primitiva
     String propietario;
     String genero;
     String especie;
-    double peso;
+    String peso;
+    String nome;
+    
+
     //Métodos
     //função do construtor (por padrao sempre existe um construtor, se não declarado é chamado de construtor vazio) um construtor criado serve para a criação de obj, porem sem atribuição de valor
     //construtor nada mais é doq um metodo que tem o nome da minha classe
@@ -18,7 +21,6 @@ public class Animais {
         this.propietario = propietario;
         this.genero = genero;
         this.especie = especie;
-        this.peso = peso;
     }
     //construtor vazio
     public Animais() {
@@ -57,13 +59,19 @@ public class Animais {
     public void setEspecie(String especie) {
         this.especie = especie;
     }
-
-    public double getPeso() {
+    public String getPeso() {
         return peso;
     }
-
-    public void setPeso(double peso) {
+    public Animais(String nome) {
+        this.nome = nome;
+    }
+    public void setPeso(String peso) {
         this.peso = peso;
     }
-
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 }
