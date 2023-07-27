@@ -8,6 +8,20 @@
             "type": "java",
             "name": "App",
             "request": "launch",
+            "mainClass": "AtivFinal_Java.App",
+            "projectName": "Hunter7210---Java-main_47d5960f"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "RevisaoFPOO.App",
+            "projectName": "Hunter7210---Java-main_47d5960f"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
             "mainClass": "RevisaoFPOO.App",
             "projectName": "Hunter7210---Java-main_2b4379b3"
         },

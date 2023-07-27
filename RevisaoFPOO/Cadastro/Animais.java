@@ -16,12 +16,12 @@ public abstract class Animais {
     //construtor nada mais é doq um metodo que tem o nome da minha classe
     //os construtores são os responsáveis por criar o objeto em memória, ou seja, instanciar a classe que foi definida
     //construtor cheio
-    public Animais(String porte, String propietario, String genero, String especie, double peso) {
+    /* public Animais(String porte, String propietario, String genero, String especie, double peso) {
         this.porte = porte;
         this.propietario = propietario;
         this.genero = genero;
         this.especie = especie;
-    }
+    } */  //CLASSE ABSTRATA N FAZ SENTIDO TER CONSTRUTORES
     //construtor vazio
     public Animais() {
     
