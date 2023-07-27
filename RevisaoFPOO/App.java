@@ -26,6 +26,8 @@ public class App {
         Gato gato1[] = new Gato[5];
         Cachorro cachorro1[] = new Cachorro[5];
         Outros outros1[] = new Outros[5];
+
+        
         JOptionPane.showMessageDialog(null, "1- GATO\n 2- CACHORRO\n 3- OUTRO");
 
         while (ligado) {
