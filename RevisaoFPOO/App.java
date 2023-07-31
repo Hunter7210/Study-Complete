@@ -18,17 +18,19 @@ public class App {
          * Animais obj1 = new Animais("pequeno", "Diogo", "Femea", "Ramister", 07.55);
          */
 
-         // contator
+        // contator
         int cont = 0;
-        /* int contGatos = 0;
-        int contCachorro = 0;
-        int contOutros = 0;
- */
+        /*
+         * int contGatos = 0;
+         * int contCachorro = 0;
+         * int contOutros = 0;
+         */
         boolean ligado = true;
 
         Gato gato1[] = new Gato[5];
         Cachorro cachorro1[] = new Cachorro[5];
         Outros outros1[] = new Outros[5];
+
         Agendamento agenda1[] = new Agendamento[5];
 
         JOptionPane.showMessageDialog(null, "Bem Vindo ao VETPET");
@@ -39,16 +41,18 @@ public class App {
             int escolha2;
 
             /* Agendar e cadastrar */
-            escolha = Integer.parseInt(JOptionPane.showInputDialog(null,"Que tipo de serviço vc está interessado? \n 1- Fazer cadastro \n 2- Agendar consulta \n 3- Sair"));
+            escolha = Integer.parseInt(JOptionPane.showInputDialog(null,
+                    "Que tipo de serviço vc está interessado? \n 1- Fazer cadastro \n 2- Agendar consulta \n 3- Sair"));
 
             if (escolha == 1) {
-                escolha2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Qual é o seu PET?\n 1-Gato \n 2-Cachorro \n 3-Outro"));
+                escolha2 = Integer.parseInt(
+                        JOptionPane.showInputDialog(null, "Qual é o seu PET?\n 1-Gato \n 2-Cachorro \n 3-Outro"));
 
                 if (escolha2 == 1) {
-                    //criar obj
-                    gato1[cont]= new Gato(null, null);//new GATO() GATO É um construtor;
+                    // criar obj
+                    gato1[cont] = new Gato(null, null);// new GATO() GATO É um construtor;
 
-                    //PREENCHER ATRIBUTOS DO OBJ
+                    // PREENCHER ATRIBUTOS DO OBJ
                     gato1[cont].setNome(JOptionPane.showInputDialog("Digite o nome:"));
                     gato1[cont].setCor(JOptionPane.showInputDialog("Digite a cor:"));
                     gato1[cont].setEspecie(JOptionPane.showInputDialog("Digite a especie: "));
@@ -71,9 +75,9 @@ public class App {
                 }
 
                 else if (escolha2 == 2) {
-                    
+
                     cachorro1[cont] = new Cachorro(null, null);
-                    
+
                     cachorro1[cont].setNome(JOptionPane.showInputDialog("Digite o nome:"));
                     cachorro1[cont].setCor(JOptionPane.showInputDialog("Digite a cor:"));
                     cachorro1[cont].setEspecie(JOptionPane.showInputDialog("Digite a especie: "));
@@ -119,55 +123,109 @@ public class App {
                                     + outros1[cont].getGenero()
                                     + "\n"
                                     + "HABITAT:" + outros1[cont].getHabitat());
-                                    cont++;
+                    cont++;
                 } else {
                     JOptionPane.showMessageDialog(null, "OPÇÃO INVÁLIDA!\n TENTE NOVAMENTE!");
                 }
-                
-                
-            }
-            else if (escolha ==2) {
-                
+
+            } else if (escolha == 2) {
+
+                String proprietario;
+
                 int escolcad;
-                
-                boolean nEncontrado = false;
-                
-                escolcad = Integer.parseInt(JOptionPane.showInputDialog(null, "Já possui cadastro?\n 1- SIM \n 2- NÃO"));
 
-                if (escolcad == 1) {
-                    JOptionPane.showMessageDialog(null,"Preencha o cadastro a seguir \nSeus dados estão seguro conosco");
+                boolean encontrado = false;
 
-                    agenda1[cont] = new Agendamento(null, null, null, null);
+                proprietario = JOptionPane.showInputDialog(null, "Digite o nome do proprietario do animal");
 
-                    agenda1[cont].setDia(JOptionPane.showInputDialog(null, "Qual dia você deseja agendar sua consulta"));
-                    agenda1[cont].setMes(JOptionPane.showInputDialog(null, "Qual mês você deseja agendar sua consulta"));
-                    agenda1[cont].setHora(JOptionPane.showInputDialog(null, "Qual hora você deseja agendar sua consulta"));
+                for (int i = 0; i < cont; i++) {
+                    if (gato1[i].getPropietario().equals(proprietario)) {
+                        JOptionPane.showMessageDialog(null, "CADASTRO ENCONTRADO");
 
-                    JOptionPane.showMessageDialog(null,"DATA DE SEU AGENDAMENTO: "+ agenda1[cont].getDia()+"/"+ agenda1[cont].getMes()+" "+ agenda1[cont].getHora());
-
-                    if (agenda1[cont].getDia().equals(agenda1)) {
-                        JOptionPane.showMessageDialog(null, "por favor insira outra data");
+                        encontrado = true;
+                        break;
                     }
-                    else {
-                        JOptionPane.showMessageDialog(null, "");
+                }
+                for (int i = 0; i < cont; i++) {
+                    if (cachorro1[i].getPropietario().equals(proprietario)) {
+                        JOptionPane.showMessageDialog(null, "CADASTRO ENCONTRADO");
+                        encontrado = true;
+                        break;
                     }
-
-
-
-
-
-                    
                 }
-                else if (escolcad == 2){
-                    JOptionPane.showMessageDialog(null,"Só agendamos consultas com animais que já possuem cadastro na VET PET \n Por favor faça o cadastro \n Obrigado!");
+                for (int i = 0; i < cont; i++) {
+                    if (outros1[i].getPropietario().equals(proprietario)) {
+                        JOptionPane.showMessageDialog(null, "CADASTRO ENCONTRADO");
+                        encontrado = true;
+                        break;
+                    }
+                }
+                String dataAgenda = JOptionPane.showInputDialog(null, "Informe a data de agendamento");
+                String horaAgenda = JOptionPane.showInputDialog(null, "Informe a hora de agendamento");
+                boolean agendaOK = true;
+
+                while (agendaOK) {
+
+                    for (int i = 0; i < cont; i++) {
+                        if (agenda1[i].getDataHora().equals(dataAgenda + horaAgenda)) {
+                            JOptionPane.showMessageDialog(null, "Horario já agendado, escolha outro");
+                        } else {
+                            agendaOK = false;
+                            JOptionPane.showMessageDialog(null,"Agendamento Sucesso");
+                            agenda1[cont] = new Agendamento();
+                            agenda1[cont].setHora(horaAgenda);
+                            agenda1[cont].setData();    
+
+                        }
+                    }
                 }
 
+                /*
+                 * escolcad = Integer.parseInt(JOptionPane.showInputDialog(null,
+                 * "Já possui cadastro?\n 1- SIM \n 2- NÃO"));
+                 * 
+                 * if (escolcad == 1) {
+                 * JOptionPane.showMessageDialog(
+                 * null,"Preencha o cadastro a seguir \nSeus dados estão seguro conosco");
+                 * 
+                 * 
+                 * 
+                 * 
+                 * 
+                 * 
+                 * agenda1[cont] = new Agendamento(null, null, null, null);
+                 * 
+                 * /* agenda1[cont].setDia(JOptionPane.showInputDialog(null,
+                 * "Qual dia você deseja agendar sua consulta"));
+                 * agenda1[cont].setMes(JOptionPane.showInputDialog(null,
+                 * "Qual mês você deseja agendar sua consulta"));
+                 */
+                /*
+                 * agenda1[cont].setHora(JOptionPane.showInputDialog(null,
+                 * "Qual hora você deseja agendar sua consulta"));
+                 * 
+                 * JOptionPane.showMessageDialog(null,"DATA DE SEU AGENDAMENTO: "+
+                 * agenda1[cont].getDia()+"/"+ agenda1[cont].getMes()+" "+
+                 * agenda1[cont].getHora());
+                 * 
+                 * if () {
+                 * JOptionPane.showMessageDialog(null, "por favor insira outra data");
+                 * }
+                 * else {
+                 * JOptionPane.showMessageDialog(null, "");
+                 * }
+                 */
 
-
+                /*
+                 * }
+                 * else if (escol == 2){
+                 * JOptionPane.showMessageDialog(
+                 * null,"Só agendamos consultas com animais que já possuem cadastro na VET PET \n Por favor faça o cadastro \n Obrigado!"
+                 * );
+                 * }
+                 */
 
             }
-
-
 
             ligado = false;
         }
