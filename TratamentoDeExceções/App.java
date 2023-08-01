@@ -55,7 +55,14 @@ public class App {
 
                     ativo = false;
                 }
-            } catch (Exception e) {
+            } catch (NumberFormatException e){
+                JOptionPane.showMessageDialog(null,"ERRO - Valor digitado nao  é um numero inteiro!");
+    
+            }
+            catch (ArithmeticException e){
+                JOptionPane.showMessageDialog(null,"ERRO - Valor digitado nao e um numero inteiro!");
+            }
+             catch (Exception e) {
                 // TODO: handle exception
                 JOptionPane.showMessageDialog(null, "ERRO: " + e.getMessage());
 
