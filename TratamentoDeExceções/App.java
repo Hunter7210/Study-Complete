@@ -10,7 +10,7 @@ public class App {
         boolean ativo = true;
 
         while (ativo) {
-            
+
             try {
                 int n1;
                 int n2;
@@ -51,9 +51,6 @@ public class App {
                 }
                 else if (escolha == 4) {
                     resultado = n1 * n2;
-                    if (n2 <= 0) {
-                        throw new Exception("NÃO DA PRA MULTIPLICAR POR NUMERO NEGATIVO");
-                    }
                     JOptionPane.showMessageDialog(null, n1 + "*" + n2 + "= " + resultado);
 
                     ativo = false;
