@@ -174,7 +174,7 @@ public class App {
                             JOptionPane.showMessageDialog(null,"Agendamento Sucesso");
                             agenda1[cont] = new Agendamento();
                             agenda1[cont].setHora(horaAgenda);
-                            agenda1[cont].setData();    
+                         /*    agenda1[cont].setData();     */
 
                         }
                     }

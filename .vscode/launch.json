@@ -8,6 +8,13 @@
             "type": "java",
             "name": "App",
             "request": "launch",
+            "mainClass": "TratamentoDeExceções.App",
+            "projectName": "Hunter7210---Java-main_5dbcfdce"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
             "mainClass": "RevisaoFPOO.App",
             "projectName": "Hunter7210---Java-main_5dbcfdce"
         },
