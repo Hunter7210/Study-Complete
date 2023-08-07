@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ExemploThrow",
+            "request": "launch",
+            "mainClass": "TratamentoDeExceções.ExemploThrow",
+            "projectName": "Hunter7210---Java-main_5dbcfdce"
+        },
+        {
+            "type": "java",
+            "name": "ExemploTryCatchFinally",
+            "request": "launch",
+            "mainClass": "TratamentoDeExceções.ExemploTryCatchFinally",
+            "projectName": "Hunter7210---Java-main_5dbcfdce"
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "TratamentoDeExceções.App",
