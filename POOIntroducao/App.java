@@ -5,5 +5,5 @@ package POOIntroducao;
  */
 public class App {
 
-    
+    RegistrarAluno obj = new RegistrarAluno();
 }

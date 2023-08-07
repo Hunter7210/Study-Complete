@@ -26,15 +26,15 @@ public class RegistrarAluno {
         public double getIdade() {
             return idade;
         }
-        public String getMedia() {
+/*         public String getMedia() {
             double resultado = 0;
             resultado = (notaMatematica+notaCiencias+notaPortugues)/3;
-           return resultado;         
+        /*    return resultado;         
         }
         //retorna a quantidade de estudantes cadastrados
         public static int getQuantidadeAluno() {
             return contadorEstudante;
-        }
+        } */
         
 
         //Metodos de set (Altera informações do objeto)
