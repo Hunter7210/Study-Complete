@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "Arraylist.App",
+            "projectName": "Hunter7210---Java-main_5dbcfdce"
+        },
+        {
+            "type": "java",
             "name": "ExemploThrow",
             "request": "launch",
             "mainClass": "TratamentoDeExceções.ExemploThrow",

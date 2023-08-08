@@ -28,9 +28,6 @@ public class ExemploThrow {
                 }else if (datanasc.equals(senha)){
                     throw new Exception("Valores1 iguais, por favor tente novamente");
                 }
-                else if(senha.contains(datanasc))) {
-
-                }
 
                 JOptionPane.showMessageDialog(null, "Cadastro com sucesso", "senha", 0);
                 tenteNovamente = false;
