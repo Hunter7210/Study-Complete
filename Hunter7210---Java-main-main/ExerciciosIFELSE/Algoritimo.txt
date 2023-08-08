@@ -1,0 +1,30 @@
+Exercicio 1 - Algoritmo
+    1. Ler a primeira variável (Valor1);
+    2. Ler a segunda variável(Valor2);
+    3. Se Valor1>Valor2 então
+        {
+        Escreva (O valor1 é maior);
+        } 
+        Se não 
+        { 
+            Escreva(O Valor2 É maior);
+        }
+
+Exercicio 2 - Algoritmo
+    1. Ler  variavel data(dNascimento);
+    2. Fazer o calculo para > ou < de 16 anos;
+
+
+Exercicio 4 - Algoritmo
+    1. Ler a  primeira variavel:(quantMaca)
+    3. Ler a variavel double =precoMaca
+    2. Se (quantMaca>=12)
+    {
+        precoMaca= 0.3
+    }
+    Se não
+    {
+        precoMaca= 0.25
+    }
+    4. Calcule = quantMaca*precoMaca;
+    5. Informe na tela.
